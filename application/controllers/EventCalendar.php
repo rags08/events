@@ -6,7 +6,8 @@ class EventCalendar extends CI_Controller {
 	
 	function __construct() {
             parent::__construct();
-            $this->load->model('eventcalendar_model', 'em');
+			
+            $this->load->model('Eventcalendar_model', 'em');
         }
 
 	public function index() {

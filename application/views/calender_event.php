@@ -73,7 +73,6 @@
 			<a href="#" data-dismiss="modal" class="btn">Close</a>
 		</div>
 	</div>
-
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/underscore-min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
@@ -82,9 +81,9 @@
 		(function($) {
 			"use strict";
 			var options = {
-				events_source: 'http://localhost/eventcalendar/load_data',
+				events_source: '<?php echo base_url();?>/EventCalendar/load_data',
 				view: 'month',
-				tmpl_path: 'http://localhost/assets/tmpls/',
+				tmpl_path: '<?php echo base_url(); ?>assets/tmpls/',
 				tmpl_cache: false,
 				onAfterViewLoad: function(view) {
 					$('.page-header h3').text(this.getTitle());
